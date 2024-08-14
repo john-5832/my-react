@@ -21,7 +21,7 @@ const StateCityDropdown = () => {
       <label>
         Select State:
         <select value={State} onChange={handleStateChange}>
-          <option value>--Select State--</option>
+          <option>--Select State--</option>
           {Object.keys(stateCityData).map((state) => (
             <option key={state} value={state}>
               {state}
