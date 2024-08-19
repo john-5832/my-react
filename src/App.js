@@ -9,6 +9,10 @@ import DigitalClock from './Ex_6';
 import RandomQuote from './Ex_7';
 import ShoppingCart from './Ex_8';
 import ItemList from './Ex_9';
+import TodoList from './Ex_10';
+import InputFocus from './Ex_12';
+import ParentComponent from './Ex_.13';
+import RegisterForm from './Ex_14';
 
 
 function App() {
@@ -23,6 +27,11 @@ function App() {
     <RandomQuote/>
     <ShoppingCart/>
     <ItemList/>
+    <TodoList/>
+    <InputFocus/>
+    <ParentComponent/>
+    {/* <RegisterForm/> */}
+    
     </>
   );
 }
