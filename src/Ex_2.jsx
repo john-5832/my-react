@@ -1,51 +1,51 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 
-// const StateCityDropdown = () => {
-//   const stateCityData = {
-//     Tamilnadu: ["Coimbatore", "Chennai", "Salem"],
-//     Kerala: ["Kochi", "Palakkad", "Trivandrum"],
-//     Karnataka: ["Bangalore", "Mysore", "Chikmagalur"],
-//   };
+const StateCityDropdown = () => {
+  const stateCityData = {
+    Tamilnadu: ["Coimbatore", "Chennai", "Salem"],
+    Kerala: ["Kochi", "Palakkad", "Trivandrum"],
+    Karnataka: ["Bangalore", "Mysore", "Chikmagalur"],
+  };
 
-//   const [State, setState] = useState('');
-//   const [cities, setCities] = useState([]);
+  const [State, setState] = useState('');
+  const [cities, setCities] = useState([]);
 
-//   const handleStateChange = (e) => {
-//     const State = e.target.value;
-//     setState(State);
-//     setCities(stateCityData[State]);
-//   };
+  const handleStateChange = (e) => {
+    const State = e.target.value;
+    setState(State);
+    setCities(stateCityData[State]);
+  };
 
-//   return (
-//     <div>
-//       <label>
-//         Select State:
-//         <select onChange={handleStateChange}>
-//           <option>--Select State--</option>
-//           {Object.keys(stateCityData).map((state) => (
-//             <option>
-//               {state}
-//             </option>
-//           ))}
-//         </select>
-//       </label>
+  return (
+    <div>
+      <label>
+        Select State:
+        <select onChange={handleStateChange}>
+          <option>--Select State--</option>
+          {Object.keys(stateCityData).map((state) => (
+            <option>
+              {state}
+            </option>
+          ))}
+        </select>
+      </label>
 
-//       <label>
-//         Select City:
-//         <select disabled={!State}>
-//           <option value>--Select City--</option>
-//           {cities.map((city) => (
-//             <option>
-//               {city}
-//             </option>
-//           ))}
-//         </select>
-//       </label>
-//     </div>
-//   );
-// };
+      <label>
+        Select City:
+        <select disabled={!State}>
+          <option value>--Select City--</option>
+          {cities.map((city) => (
+            <option>
+              {city}
+            </option>
+          ))}
+        </select>
+      </label>
+    </div>
+  );
+};
 
-// export default StateCityDropdown;
+export default StateCityDropdown;
 
 import React, { useState } from "react";
 
